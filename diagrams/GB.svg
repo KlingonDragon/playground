@@ -1,0 +1,97 @@
+<svg viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+    <style>
+path, rect, circle {
+    fill: currentColor;
+    fill-opacity: 0.5;
+    stroke: currentColor;
+    stroke-opacity: 1;
+    stroke-width: 8;
+    stroke-linejoin: round;
+}
+text {
+    font-family: sans-serif;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+text.h1 {
+    font-size: 64px;
+    text-decoration: underline;
+}
+text.h2 {
+    font-size: 32px;
+    text-decoration: underline;
+}
+text.text {
+    font-size: 16px;
+}
+    </style>
+    <g fill="white">
+        <rect color="black" x="6" y="6" width="1188" height="1188" rx="64" ry="64"/>
+        <text class="h1" x="600" y="56">British Isles</text>
+    </g>
+    <g fill="white">
+        <rect color="purple" x="360" y="160" width="820" height="1000" rx="64" ry="64"/>
+        <text class="h2" x="780" y="190">United Kingdom</text>
+        <text class="text" x="780" y="220">(United Kingdom of Great Britain and Northern Ireland)</text>
+    </g>
+    <g fill="black">
+        <rect color="yellow" x="720" y="250" width="440" height="860" rx="64" ry="64"/>
+        <text class="h2" x="940" y="280">Great Britain</text>
+        <text class="text" x="940" y="310">Political Term</text>
+    </g>
+    <g fill="white">
+        <rect color="black" x="740" y="340" width="250" height="740" rx="64" ry="64"/>
+        <text class="h2" x="865" y="370">Great Britain</text>
+        <text class="text" x="865" y="400">Largest Island in the British Isles</text>
+    </g>
+    <g fill="black">
+        <rect color="white" x="840" y="450" width="300" height="180" rx="64" ry="64"/>
+        <text class="h2" x="990" y="480">England</text>
+        <text class="text" x="915" y="560">Mainland England</text>
+        <text class="text" x="1065" y="540">Isle of Wight</text>
+        <text class="text" x="1065" y="560">Isle of Sheppy</text>
+        <text class="text" x="1065" y="580">Etc.</text>
+    </g>
+    <g fill="white">
+        <rect color="blue" x="840" y="650" width="300" height="180" rx="64" ry="64"/>
+        <text class="h2" x="990" y="680">Scotland</text>
+        <text class="text" x="915" y="760">Mainland Scotland</text>
+        <text class="text" x="1065" y="720">Shetland Islands </text>
+        <text class="text" x="1065" y="740">Orkney Islands</text>
+        <text class="text" x="1065" y="760">Inner Hebrides</text>
+        <text class="text" x="1065" y="780">Outer Hebrides</text>
+        <text class="text" x="1065" y="800">Etc.</text>
+    </g>
+    <g fill="white">
+        <rect color="red" x="840" y="850" width="300" height="180" rx="64" ry="64"/>
+        <text class="h2" x="990" y="880">Wales</text>
+        <text class="text" x="915" y="960">Mainland Wales</text>
+        <text class="text" x="1065" y="950">Anglesey</text>
+        <text class="text" x="1065" y="970">Etc.</text>
+    </g>
+    <g fill="white">
+        <rect color="black" x="190" y="340" width="340" height="540" rx="64" ry="64"/>
+        <text class="h2" x="360" y="370">Ireland</text>
+        <text class="text" x="360" y="400">(Island)</text>
+    </g>
+    <g fill="black">
+        <rect color="orange" x="380" y="450" width="300" height="180" rx="64" ry="64"/>
+        <text class="h2" x="530" y="480">Nothern Ireland</text>
+        <text class="text" x="455" y="560">Mainland N. Ireland</text>
+        <text class="text" x="605" y="550">Rathlin Island</text>
+        <text class="text" x="605" y="570">Etc.</text>
+    </g>
+    <g fill="black">
+        <rect color="green" x="40" y="650" width="300" height="180" rx="64" ry="64"/>
+        <text class="h2" x="190" y="680">Éire</text>
+        <text class="text" x="190" y="710">(Republic of Ireland)</text>
+        <text class="text" x="105" y="740">Achill Island</text>
+        <text class="text" x="105" y="760">Great Island</text>
+        <text class="text" x="105" y="780">Etc.</text>
+        <text class="text" x="265" y="760">Mainland Éire</text>
+    </g>
+    <g fill="black">
+        <circle color="cyan" cx="200" cy="1000" r="60"/>
+        <text class="text" x="200" y="1000">Isle of Mann</text>
+    </g>
+</svg>
