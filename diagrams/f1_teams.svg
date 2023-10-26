@@ -1,0 +1,340 @@
+<svg viewBox="1940 0 100 120" xmlns="http://www.w3.org/2000/svg">
+    <style>
+path {
+    fill: none;
+    stroke-linejoin: round;
+}
+text {
+    font-family: sans-serif;
+}
+g.grid > path {
+    stroke: black;
+    stroke-width: 0.1;
+    stroke-linecap: round;
+}
+g.grid > text {
+    font-size: 1px;
+    transform:rotate(-90deg);
+    transform-origin: center;
+    transform-box: fill-box;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+g.team > path {
+    stroke-width: 2;
+    stroke-linecap: butt;
+}
+g.team > text {
+    fill: white;
+    stroke: black;
+    stroke-width: 0.05;
+    font-size: 1.6px;
+    text-anchor: end;
+    dominant-baseline: central;
+}
+g.team > text.small {
+    stroke-width: 0.025;
+    font-size: 0.8px;
+}
+g.team > text.med {
+    stroke-width: 0.025;
+    font-size: 1.2px;
+}
+    </style>
+    <rect x="1940" width="100%" height="100%" fill="white"/>
+    <g class="grid">
+        <path class="grid" d="
+            M 1950,4 v 120 Z
+            M 1951,4 v 120 Z
+            M 1952,4 v 120 Z
+            M 1953,4 v 120 Z
+            M 1954,4 v 120 Z
+            M 1955,4 v 120 Z
+            M 1956,4 v 120 Z
+            M 1957,4 v 120 Z
+            M 1958,4 v 120 Z
+            M 1959,4 v 120 Z
+            M 1960,4 v 120 Z
+            M 1961,4 v 120 Z
+            M 1962,4 v 120 Z
+            M 1963,4 v 120 Z
+            M 1964,4 v 120 Z
+            M 1965,4 v 120 Z
+            M 1966,4 v 120 Z
+            M 1967,4 v 120 Z
+            M 1968,4 v 120 Z
+            M 1969,4 v 120 Z
+            M 1970,4 v 120 Z
+            M 1971,4 v 120 Z
+            M 1972,4 v 120 Z
+            M 1973,4 v 120 Z
+            M 1974,4 v 120 Z
+            M 1975,4 v 120 Z
+            M 1976,4 v 120 Z
+            M 1977,4 v 120 Z
+            M 1978,4 v 120 Z
+            M 1979,4 v 120 Z
+            M 1980,4 v 120 Z
+            M 1981,4 v 120 Z
+            M 1982,4 v 120 Z
+            M 1983,4 v 120 Z
+            M 1984,4 v 120 Z
+            M 1985,4 v 120 Z
+            M 1986,4 v 120 Z
+            M 1987,4 v 120 Z
+            M 1988,4 v 120 Z
+            M 1989,4 v 120 Z
+            M 1990,4 v 120 Z
+            M 1991,4 v 120 Z
+            M 1992,4 v 120 Z
+            M 1993,4 v 120 Z
+            M 1994,4 v 120 Z
+            M 1995,4 v 120 Z
+            M 1996,4 v 120 Z
+            M 1997,4 v 120 Z
+            M 1998,4 v 120 Z
+            M 1999,4 v 120 Z
+            M 2000,4 v 120 Z
+            M 2001,4 v 120 Z
+            M 2002,4 v 120 Z
+            M 2003,4 v 120 Z
+            M 2004,4 v 120 Z
+            M 2005,4 v 120 Z
+            M 2006,4 v 120 Z
+            M 2007,4 v 120 Z
+            M 2008,4 v 120 Z
+            M 2009,4 v 120 Z
+            M 2010,4 v 120 Z
+            M 2011,4 v 120 Z
+            M 2012,4 v 120 Z
+            M 2013,4 v 120 Z
+            M 2014,4 v 120 Z
+            M 2015,4 v 120 Z
+            M 2016,4 v 120 Z
+            M 2017,4 v 120 Z
+            M 2018,4 v 120 Z
+            M 2019,4 v 120 Z
+            M 2020,4 v 120 Z
+            M 2021,4 v 120 Z
+            M 2022,4 v 120 Z
+            M 2023,4 v 120 Z
+            M 2024,4 v 120 Z
+        "/>
+        <text x="1950.5" y="2.5">1950</text>
+        <text x="1951.5" y="2.5">1951</text>
+        <text x="1952.5" y="2.5">1952</text>
+        <text x="1953.5" y="2.5">1953</text>
+        <text x="1954.5" y="2.5">1954</text>
+        <text x="1955.5" y="2.5">1955</text>
+        <text x="1956.5" y="2.5">1956</text>
+        <text x="1957.5" y="2.5">1957</text>
+        <text x="1958.5" y="2.5">1958</text>
+        <text x="1959.5" y="2.5">1959</text>
+        <text x="1960.5" y="2.5">1960</text>
+        <text x="1961.5" y="2.5">1961</text>
+        <text x="1962.5" y="2.5">1962</text>
+        <text x="1963.5" y="2.5">1963</text>
+        <text x="1964.5" y="2.5">1964</text>
+        <text x="1965.5" y="2.5">1965</text>
+        <text x="1966.5" y="2.5">1966</text>
+        <text x="1967.5" y="2.5">1967</text>
+        <text x="1968.5" y="2.5">1968</text>
+        <text x="1969.5" y="2.5">1969</text>
+        <text x="1970.5" y="2.5">1970</text>
+        <text x="1971.5" y="2.5">1971</text>
+        <text x="1972.5" y="2.5">1972</text>
+        <text x="1973.5" y="2.5">1973</text>
+        <text x="1974.5" y="2.5">1974</text>
+        <text x="1975.5" y="2.5">1975</text>
+        <text x="1976.5" y="2.5">1976</text>
+        <text x="1977.5" y="2.5">1977</text>
+        <text x="1978.5" y="2.5">1978</text>
+        <text x="1979.5" y="2.5">1979</text>
+        <text x="1980.5" y="2.5">1980</text>
+        <text x="1981.5" y="2.5">1981</text>
+        <text x="1982.5" y="2.5">1982</text>
+        <text x="1983.5" y="2.5">1983</text>
+        <text x="1984.5" y="2.5">1984</text>
+        <text x="1985.5" y="2.5">1985</text>
+        <text x="1986.5" y="2.5">1986</text>
+        <text x="1987.5" y="2.5">1987</text>
+        <text x="1988.5" y="2.5">1988</text>
+        <text x="1989.5" y="2.5">1989</text>
+        <text x="1990.5" y="2.5">1990</text>
+        <text x="1991.5" y="2.5">1991</text>
+        <text x="1992.5" y="2.5">1992</text>
+        <text x="1993.5" y="2.5">1993</text>
+        <text x="1994.5" y="2.5">1994</text>
+        <text x="1995.5" y="2.5">1995</text>
+        <text x="1996.5" y="2.5">1996</text>
+        <text x="1997.5" y="2.5">1997</text>
+        <text x="1998.5" y="2.5">1998</text>
+        <text x="1999.5" y="2.5">1999</text>
+        <text x="2000.5" y="2.5">2000</text>
+        <text x="2001.5" y="2.5">2001</text>
+        <text x="2002.5" y="2.5">2002</text>
+        <text x="2003.5" y="2.5">2003</text>
+        <text x="2004.5" y="2.5">2004</text>
+        <text x="2005.5" y="2.5">2005</text>
+        <text x="2006.5" y="2.5">2006</text>
+        <text x="2007.5" y="2.5">2007</text>
+        <text x="2008.5" y="2.5">2008</text>
+        <text x="2009.5" y="2.5">2009</text>
+        <text x="2010.5" y="2.5">2010</text>
+        <text x="2011.5" y="2.5">2011</text>
+        <text x="2012.5" y="2.5">2012</text>
+        <text x="2013.5" y="2.5">2013</text>
+        <text x="2014.5" y="2.5">2014</text>
+        <text x="2015.5" y="2.5">2015</text>
+        <text x="2016.5" y="2.5">2016</text>
+        <text x="2017.5" y="2.5">2017</text>
+        <text x="2018.5" y="2.5">2018</text>
+        <text x="2019.5" y="2.5">2019</text>
+        <text x="2020.5" y="2.5">2020</text>
+        <text x="2021.5" y="2.5">2021</text>
+        <text x="2022.5" y="2.5">2022</text>
+        <text x="2023.5" y="2.5">2023</text>
+    </g>
+    <!-- A note on years. start on start year end on end year +1-->
+    <g class="team">
+        <path d="M 1950,6 L 1952,6" stroke="darkred"/>
+        <text x="1952" y="6">Alfa Romeo</text>
+    </g>
+    <g class="team">
+        <path d="M 1950,9 L 1953,9" stroke="black"/>
+        <text x="1953" y="9">Alta</text>
+    </g>
+    <g class="team">
+        <path d="M 1950,12 L 1951,12" stroke="black"/>
+        <path d="M 1952,12 L 1970,12" stroke="black"/>
+        <text x="1970" y="12">Cooper</text>
+    </g>
+    <g class="team">
+        <path d="M 1950,15 L 1953,15" stroke="black"/>
+        <text x="1953" y="15">ERA</text>
+    </g>
+    <g class="team">
+        <path d="M 1950,18 L 2024,18" stroke="red"/>
+        <text x="2024" y="18">Ferrari</text>
+    </g>
+    <g class="team">
+        <path d="M 1950,21 L 1958,21" stroke="black"/>
+        <text x="1958" y="21">Maserati</text>
+    </g>
+    <g class="team">
+        <path d="M 1950,24 L 1954,24" stroke="black"/>
+        <text x="1954" y="24">Milano</text>
+    </g>
+    <g class="team">
+        <path d="M 1950,27 L 1952.45,27" stroke="black"/>
+        <path d="M 1952.55,27 L 1957,27" stroke="black"/>
+        <text x="1952" y="27">Simca</text>
+        <text x="1957" y="27" class="med">Gordini</text>
+    </g>
+    <g class="team">
+        <path d="M 1950,30 L 1952,30" stroke="black"/>
+        <text x="1952" y="30">Talbot-Lago</text>
+    </g>
+    <g class="team">
+        <path d="M 1951,33 L 1952,33" stroke="black"/>
+        <path d="M 1954,33 L 1978,33" stroke="black"/>
+        <text x="1978" y="33">BRM</text>
+    </g>
+    <g class="team">
+        <path d="M 1951,36 L 1955,36" stroke="black"/>
+        <text x="1955" y="36">HWM</text>
+    </g>
+    <g class="team">
+        <path d="M 1951,39 L 1954,39" stroke="black"/>
+        <path d="M 1958,39 L 1959,39" stroke="black"/>
+        <text x="1959" y="39">OSCA</text>
+    </g>
+    <g class="team">
+        <path d="M 1951,42 L 1954,42" stroke="black"/>
+        <text x="1954" y="42">Veritas</text>
+    </g>
+    <g class="team">
+        <path d="M 1952,45 L 1954,45" stroke="black"/>
+        <text x="1954" y="45">AFM</text>
+    </g>
+    <g class="team">
+        <path d="M 1952,48 L 1953,48" stroke="black"/>
+        <text x="1953" y="48">Aston-Butterworth</text>
+    </g>
+    <g class="team">
+        <path d="M 1952,51 L 1953,51" stroke="black"/>
+        <text x="1953" y="51">Balsa</text>
+    </g>
+    <g class="team">
+        <path d="M 1952,54 L 1953,54" stroke="black"/>
+        <text x="1953" y="54">Cisitalia</text>
+    </g>
+    <g class="team">
+        <path d="M 1952,57 L 1960,57" stroke="black"/>
+        <text x="1960" y="57">Connaught</text>
+    </g>
+    <g class="team">
+        <path d="M 1952,60 L 1953,60" stroke="black"/>
+        <text x="1953" y="60">Frazer-Nash</text>
+    </g>
+    <g class="team">
+        <path d="M 1952,63 L 1954,63" stroke="black"/>
+        <text x="1954" y="63">Heck</text>
+    </g>
+    <g class="team">
+        <path d="M 1952,66 L 1953,66" stroke="black"/>
+        <text x="1953" y="66">Krakau</text>
+    </g>
+    <g class="team">
+        <path d="M 1952,69 L 1954,69" stroke="black"/>
+        <text x="1954" y="69">Nacke</text>
+    </g>
+    <g class="team">
+        <path d="M 1952,72 L 1954,72" stroke="black"/>
+        <text x="1954" y="72">Reif</text>
+    </g>
+    <g class="team">
+        <path d="M 1953,75 L 1954,75" stroke="black"/>
+        <text x="1954" y="75">EMW</text>
+    </g>
+    <g class="team">
+        <path d="M 1953,78 L 1954,78" stroke="black"/>
+        <text x="1954" y="78">Greifzu</text>
+    </g>
+    <g class="team">
+        <path d="M 1954,81 L 1955,81" stroke="black"/>
+        <text x="1955" y="81">Klenk</text>
+    </g>
+    <g class="team">
+        <path d="M 1954,84 L 1958,84" stroke="black"/>
+        <text x="1958" y="84">Lancia</text>
+    </g>
+    <g class="team">
+        <path d="M 1954,87 L 1956,87" stroke="silver"/>
+        <text x="1956" y="87">Mercedes</text>
+    </g>
+    <g class="team">
+        <path d="M 1954,90 L 1961,90" stroke="black"/>
+        <text x="1961" y="90">Vanwall</text>
+    </g>
+    <!-- 
+    <g class="team">
+        <path d="M 1966,9 L 2024,9" stroke="orange"/>
+        <text x="2024" y="9">McLaren</text>
+    </g>
+    <g class="team">
+        <path d="M 1977,12 L 2024,12" stroke="navy"/>
+        <text x="2024" y="12">Williams</text>
+    </g>
+    <g class="team">
+        <path d="M 1993,15 L 2006,15" stroke="white"/>
+        <text x="2006" y="15">Sauber</text>
+        <path d="M 2006,15 L 2010,15" stroke="grey"/>
+        <text x="2010" y="14.5" class="small">BMW</text>
+        <text x="2010" y="15.5" class="small">Sauber</text>
+        <path d="M 2010,15 L 2019,15" stroke="white"/>
+        <text x="2019" y="15">Sauber</text>
+        <path d="M 2019,15 L 2024,15" stroke="darkred"/>
+        <text x="2024" y="15" class="small">Alfa Romeo</text>
+    </g> -->
+</svg>
