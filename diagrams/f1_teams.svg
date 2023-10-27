@@ -1,4 +1,4 @@
-<svg viewBox="1940 0 100 120" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="1940 0 100 600" xmlns="http://www.w3.org/2000/svg">
     <style>
 path {
     fill: none;
@@ -44,81 +44,81 @@ g.team > text.med {
     <rect x="1940" width="100%" height="100%" fill="white"/>
     <g class="grid">
         <path class="grid" d="
-            M 1950,4 v 120 Z
-            M 1951,4 v 120 Z
-            M 1952,4 v 120 Z
-            M 1953,4 v 120 Z
-            M 1954,4 v 120 Z
-            M 1955,4 v 120 Z
-            M 1956,4 v 120 Z
-            M 1957,4 v 120 Z
-            M 1958,4 v 120 Z
-            M 1959,4 v 120 Z
-            M 1960,4 v 120 Z
-            M 1961,4 v 120 Z
-            M 1962,4 v 120 Z
-            M 1963,4 v 120 Z
-            M 1964,4 v 120 Z
-            M 1965,4 v 120 Z
-            M 1966,4 v 120 Z
-            M 1967,4 v 120 Z
-            M 1968,4 v 120 Z
-            M 1969,4 v 120 Z
-            M 1970,4 v 120 Z
-            M 1971,4 v 120 Z
-            M 1972,4 v 120 Z
-            M 1973,4 v 120 Z
-            M 1974,4 v 120 Z
-            M 1975,4 v 120 Z
-            M 1976,4 v 120 Z
-            M 1977,4 v 120 Z
-            M 1978,4 v 120 Z
-            M 1979,4 v 120 Z
-            M 1980,4 v 120 Z
-            M 1981,4 v 120 Z
-            M 1982,4 v 120 Z
-            M 1983,4 v 120 Z
-            M 1984,4 v 120 Z
-            M 1985,4 v 120 Z
-            M 1986,4 v 120 Z
-            M 1987,4 v 120 Z
-            M 1988,4 v 120 Z
-            M 1989,4 v 120 Z
-            M 1990,4 v 120 Z
-            M 1991,4 v 120 Z
-            M 1992,4 v 120 Z
-            M 1993,4 v 120 Z
-            M 1994,4 v 120 Z
-            M 1995,4 v 120 Z
-            M 1996,4 v 120 Z
-            M 1997,4 v 120 Z
-            M 1998,4 v 120 Z
-            M 1999,4 v 120 Z
-            M 2000,4 v 120 Z
-            M 2001,4 v 120 Z
-            M 2002,4 v 120 Z
-            M 2003,4 v 120 Z
-            M 2004,4 v 120 Z
-            M 2005,4 v 120 Z
-            M 2006,4 v 120 Z
-            M 2007,4 v 120 Z
-            M 2008,4 v 120 Z
-            M 2009,4 v 120 Z
-            M 2010,4 v 120 Z
-            M 2011,4 v 120 Z
-            M 2012,4 v 120 Z
-            M 2013,4 v 120 Z
-            M 2014,4 v 120 Z
-            M 2015,4 v 120 Z
-            M 2016,4 v 120 Z
-            M 2017,4 v 120 Z
-            M 2018,4 v 120 Z
-            M 2019,4 v 120 Z
-            M 2020,4 v 120 Z
-            M 2021,4 v 120 Z
-            M 2022,4 v 120 Z
-            M 2023,4 v 120 Z
-            M 2024,4 v 120 Z
+            M 1950,4 v 592 Z
+            M 1951,4 v 592 Z
+            M 1952,4 v 592 Z
+            M 1953,4 v 592 Z
+            M 1954,4 v 592 Z
+            M 1955,4 v 592 Z
+            M 1956,4 v 592 Z
+            M 1957,4 v 592 Z
+            M 1958,4 v 592 Z
+            M 1959,4 v 592 Z
+            M 1960,4 v 592 Z
+            M 1961,4 v 592 Z
+            M 1962,4 v 592 Z
+            M 1963,4 v 592 Z
+            M 1964,4 v 592 Z
+            M 1965,4 v 592 Z
+            M 1966,4 v 592 Z
+            M 1967,4 v 592 Z
+            M 1968,4 v 592 Z
+            M 1969,4 v 592 Z
+            M 1970,4 v 592 Z
+            M 1971,4 v 592 Z
+            M 1972,4 v 592 Z
+            M 1973,4 v 592 Z
+            M 1974,4 v 592 Z
+            M 1975,4 v 592 Z
+            M 1976,4 v 592 Z
+            M 1977,4 v 592 Z
+            M 1978,4 v 592 Z
+            M 1979,4 v 592 Z
+            M 1980,4 v 592 Z
+            M 1981,4 v 592 Z
+            M 1982,4 v 592 Z
+            M 1983,4 v 592 Z
+            M 1984,4 v 592 Z
+            M 1985,4 v 592 Z
+            M 1986,4 v 592 Z
+            M 1987,4 v 592 Z
+            M 1988,4 v 592 Z
+            M 1989,4 v 592 Z
+            M 1990,4 v 592 Z
+            M 1991,4 v 592 Z
+            M 1992,4 v 592 Z
+            M 1993,4 v 592 Z
+            M 1994,4 v 592 Z
+            M 1995,4 v 592 Z
+            M 1996,4 v 592 Z
+            M 1997,4 v 592 Z
+            M 1998,4 v 592 Z
+            M 1999,4 v 592 Z
+            M 2000,4 v 592 Z
+            M 2001,4 v 592 Z
+            M 2002,4 v 592 Z
+            M 2003,4 v 592 Z
+            M 2004,4 v 592 Z
+            M 2005,4 v 592 Z
+            M 2006,4 v 592 Z
+            M 2007,4 v 592 Z
+            M 2008,4 v 592 Z
+            M 2009,4 v 592 Z
+            M 2010,4 v 592 Z
+            M 2011,4 v 592 Z
+            M 2012,4 v 592 Z
+            M 2013,4 v 592 Z
+            M 2014,4 v 592 Z
+            M 2015,4 v 592 Z
+            M 2016,4 v 592 Z
+            M 2017,4 v 592 Z
+            M 2018,4 v 592 Z
+            M 2019,4 v 592 Z
+            M 2020,4 v 592 Z
+            M 2021,4 v 592 Z
+            M 2022,4 v 592 Z
+            M 2023,4 v 592 Z
+            M 2024,4 v 592 Z
         "/>
         <text x="1950.5" y="2.5">1950</text>
         <text x="1951.5" y="2.5">1951</text>
@@ -316,6 +316,51 @@ g.team > text.med {
     <g class="team">
         <path d="M 1954,90 L 1961,90" stroke="black"/>
         <text x="1961" y="90">Vanwall</text>
+    </g>
+    <g class="team">
+        <path d="M 1955,93 L 1956,93" stroke="black"/>
+        <text x="1956" y="93">Arzani-Volpini</text>
+    </g>
+    <g class="team">
+        <path d="M 1956,96 L 1957,96" stroke="black"/>
+        <text x="1957" y="96">Bugatti</text>
+    </g>
+    <g class="team">
+        <path d="M 1956,99 L 1957,99" stroke="black"/>
+        <path d="M 1961,99 L 1963,99" stroke="black"/>
+        <text x="1963" y="99">Emeryson</text>
+    </g>
+    <g class="team">
+        <path d="M 1957,102 L 1963,102" stroke="black"/>
+        <text x="1963" y="102">Porsche</text>
+    </g>
+    <g class="team">
+        <path d="M 1958,105 L 1995,105" stroke="darkgreen"/>
+        <text x="1995" y="105">Lotus</text>
+    </g>
+    <g class="team">
+        <path d="M 1959,108 L 1961,108" stroke="darkgreen"/>
+        <text x="1961" y="108">Aston Martin</text>
+    </g>
+    <g class="team">
+        <path d="M 1959,111 L 1961,111" stroke="black"/>
+        <text x="1961" y="111">Behra-Porsche</text>
+    </g>
+    <g class="team">
+        <path d="M 1959,114 L 1960,114" stroke="black"/>
+        <text x="1960" y="114">Fry</text>
+    </g>
+    <g class="team">
+        <path d="M 1959,117 L 1962,117" stroke="black"/>
+        <text x="1962" y="117">JBW</text>
+    </g>
+    <g class="team">
+        <path d="M 1959,120 L 1960,120" stroke="black"/>
+        <text x="1960" y="120">Kurtis Kraft</text>
+    </g>
+    <g class="team">
+        <path d="M 1959,123 L 1960,123" stroke="black"/>
+        <text x="1960" y="123">Tec-Mec</text>
     </g>
     <!-- 
     <g class="team">
