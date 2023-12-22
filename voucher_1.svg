@@ -1,0 +1,46 @@
+<svg viewBox="-40 -20 80 40" xmlns="http://www.w3.org/2000/svg">
+    <style>
+text {
+    font-family: sans-serif;
+    fill: black;
+    text-anchor: middle;
+    dominant-baseline: middle;
+    font-size: 2px;
+}
+text.h1 {
+    font-size: 20px;
+}
+text.h2 {
+    font-size: 10px;
+}
+text.h3 {
+    font-size: 5px;
+}
+text.list {
+    text-anchor: start;
+    dominant-baseline: top;
+}
+text.id {
+    font-size: 10px;
+    fill: silver
+}
+    </style>
+    <path fill="white" stroke="black" d="M -40,-20 h 80 v 40 h -80 v -40 Z"/>
+    <text class="id" y="15">----. ..--- ..--- --...</text>
+    <g><!-- simple -->
+        <text class="h1" x="-20" y="-5">£10</text>
+        <text class="h2" x="-20" y="10">C₂H₅OH</text>
+    </g>
+    <g><!-- Ts&Cs-->
+        <text class="h3" x="20" y="-10">Terms and</text>
+        <text class="h3" x="20" y="-5">Conditions</text>
+        <text class="list">
+            <tspan x="0">- This Voucher may be redeemed when</tspan>
+            <tspan x="0" dy="1.2em">presented alongside a recipt for alcohol.</tspan>
+            <tspan x="0" dy="1.2em">- You will be reimbursed the amount spent</tspan>
+            <tspan x="0" dy="1.2em">on alcohol up to the value of £10.</tspan>
+            <tspan x="0" dy="1.2em">- For this voucher, Alcohol is defined by</tspan>
+            <tspan x="0" dy="1.2em">section 191 of the Licensing Act 2003</tspan>
+        </text>
+    </g>
+</svg>
