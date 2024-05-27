@@ -335,8 +335,8 @@ g.team > text.med {
         <text x="1980" y="84">Wolf</text>
     </g>
     <g class="team">
-        <path d="M 1977,84 L 1986,84" stroke="yellow"/>
-        <text x="1986" y="84">Renault</text>
+        <path d="M 1977,87 L 1986,87" stroke="yellow"/>
+        <text x="1986" y="87">Renault</text>
     </g>
     <g class="team">
         <path d="M 1978,90 L 1991,90" stroke="black"/>
