@@ -1,4 +1,7 @@
 <svg viewBox="1940 0 100 600" xmlns="http://www.w3.org/2000/svg">
+<!-- Pre-1958 Teams removed -->
+<!-- Where possible, I have shown pre-1958 information for post-1958 teams -->
+<!-- Single season teams have also been removed -->
     <style>
 path {
     fill: none;
@@ -119,6 +122,9 @@ g.team > text.med {
             M 2022,4 v 592 Z
             M 2023,4 v 592 Z
             M 2024,4 v 592 Z
+            M 2025,4 v 592 Z
+            M 2026,4 v 592 Z
+            M 2027,4 v 592 Z
         "/>
         <text x="1950.5" y="2.5">1950</text>
         <text x="1951.5" y="2.5">1951</text>
@@ -194,183 +200,153 @@ g.team > text.med {
         <text x="2021.5" y="2.5">2021</text>
         <text x="2022.5" y="2.5">2022</text>
         <text x="2023.5" y="2.5">2023</text>
+        <text x="2024.5" y="2.5">2024</text>
+        <text x="2025.5" y="2.5">2025</text>
+        <text x="2026.5" y="2.5">2026</text>
     </g>
     <!-- A note on years. start on start year end on end year +1-->
     <g class="team">
-        <path d="M 1950,6 L 1952,6" stroke="darkred"/>
-        <text x="1952" y="6">Alfa Romeo</text>
+        <path d="M 1950,6 L 1951,6" stroke="black"/>
+        <path d="M 1952,6 L 1970,6" stroke="black"/>
+        <text x="1970" y="6">Cooper</text>
     </g>
     <g class="team">
-        <path d="M 1950,9 L 1953,9" stroke="black"/>
-        <text x="1953" y="9">Alta</text>
+        <path d="M 1950,9 L 2025,9" stroke="red"/>
+        <text x="2025" y="9">Ferrari</text>
     </g>
     <g class="team">
-        <path d="M 1950,12 L 1951,12" stroke="black"/>
-        <path d="M 1952,12 L 1970,12" stroke="black"/>
-        <text x="1970" y="12">Cooper</text>
+        <path d="M 1950,12 L 1959,12" stroke="black"/>
+        <text x="1959" y="12">Maserati</text>
     </g>
     <g class="team">
-        <path d="M 1950,15 L 1953,15" stroke="black"/>
-        <text x="1953" y="15">ERA</text>
+        <path d="M 1951,15 L 1952,15" stroke="black"/>
+        <path d="M 1954,15 L 1978,15" stroke="black"/>
+        <text x="1978" y="15">BRM</text>
     </g>
     <g class="team">
-        <path d="M 1950,18 L 2024,18" stroke="red"/>
-        <text x="2024" y="18">Ferrari</text>
+        <path d="M 1958,18 L 1995,18" stroke="darkgreen"/>
+        <text x="1995" y="18">Lotus</text>
     </g>
     <g class="team">
-        <path d="M 1950,21 L 1958,21" stroke="black"/>
-        <text x="1958" y="21">Maserati</text>
+        <path d="M 1954,21 L 1959,21" stroke="black"/>
+        <text x="1959" y="21">Vanwall</text>
     </g>
     <g class="team">
-        <path d="M 1950,24 L 1954,24" stroke="black"/>
-        <text x="1954" y="24">Milano</text>
+        <path d="M 1961,24 L 1964,24" stroke="black"/>
+        <text x="1964" y="24">Porsche</text>
     </g>
     <g class="team">
-        <path d="M 1950,27 L 1952.45,27" stroke="black"/>
-        <path d="M 1952.55,27 L 1957,27" stroke="black"/>
-        <text x="1952" y="27">Simca</text>
-        <text x="1957" y="27" class="med">Gordini</text>
+        <path d="M 1962,27 L 1993,27" stroke="black"/>
+        <text x="1993" y="27">Brabham</text>
     </g>
     <g class="team">
-        <path d="M 1950,30 L 1952,30" stroke="black"/>
-        <text x="1952" y="30">Talbot-Lago</text>
+        <path d="M 1962,30 L 1964,30" stroke="black"/>
+        <path d="M 1967,30 L 1969,30" stroke="black"/>
+        <path d="M 1974,30 L 1976,30" stroke="black"/>
+        <path d="M 1985,30 L 1992,30" stroke="black"/>
+        <path d="M 1993,30 L 1994,30" stroke="black"/>
+        <path d="M 1997,30 L 1998,30" stroke="black"/>
+        <text x="1998" y="30">Lola</text>
     </g>
     <g class="team">
-        <path d="M 1951,33 L 1952,33" stroke="black"/>
-        <path d="M 1954,33 L 1978,33" stroke="black"/>
-        <text x="1978" y="33">BRM</text>
+        <path d="M 1964,33 L 1969,33" stroke="white"/>
+        <text x="1969" y="33">Honda</text>
     </g>
     <g class="team">
-        <path d="M 1951,36 L 1955,36" stroke="black"/>
-        <text x="1955" y="36">HWM</text>
+        <path d="M 1966,36 L 1969,36" stroke="black"/>
+        <text x="1969" y="36">Eagle</text>
     </g>
     <g class="team">
-        <path d="M 1951,39 L 1954,39" stroke="black"/>
-        <path d="M 1958,39 L 1959,39" stroke="black"/>
-        <text x="1959" y="39">OSCA</text>
+        <path d="M 1966,39 L 2025,39" stroke="orange"/>
+        <text x="2025" y="39">McLaren</text>
     </g>
     <g class="team">
-        <path d="M 1951,42 L 1954,42" stroke="black"/>
-        <text x="1954" y="42">Veritas</text>
+        <path d="M 1966,42 L 1999,42" stroke="black"/>
+        <text x="1999" y="42">Tyrrell</text>
+        <path d="M 1999,42 L 2006,42" stroke="white"/>
+        <text x="2006" y="41">BAR</text>
+        <path d="M 2006,42 L 2009,42" stroke="white"/>
+        <text x="2009" y="42">Honda</text>
+        <path d="M 2009,42 L 2010,42" stroke="white"/>
+        <text x="2010" y="43">Brawn</text>
+        <path d="M 2010,42 L 2025,42" stroke="silver"/>
+        <text x="2025" y="42">Mercedes</text>
     </g>
     <g class="team">
-        <path d="M 1952,45 L 1954,45" stroke="black"/>
-        <text x="1954" y="45">AFM</text>
+        <path d="M 1967,45 L 1973,45" stroke="black"/>
+        <text x="1973" y="45">Matra</text>
     </g>
     <g class="team">
-        <path d="M 1952,48 L 1953,48" stroke="black"/>
-        <text x="1953" y="48">Aston-Butterworth</text>
+        <path d="M 1969,48 L 1977,48" stroke="black"/>
+        <text x="1977" y="48">Frank Williams Racing Cars</text>
+        <path d="M 1977,48 L 2025,48" stroke="navy"/>
+        <text x="2025" y="48">Williams</text>
     </g>
     <g class="team">
-        <path d="M 1952,51 L 1953,51" stroke="black"/>
-        <text x="1953" y="51">Balsa</text>
+        <path d="M 1970,51 L 1978,51" stroke="black"/>
+        <path d="M 1981,51 L 1983,51" stroke="black"/>
+        <path d="M 1987,51 L 1993,51" stroke="black"/>
+        <text x="1993" y="51">March</text>
     </g>
     <g class="team">
-        <path d="M 1952,54 L 1953,54" stroke="black"/>
-        <text x="1953" y="54">Cisitalia</text>
+        <path d="M 1970,54 L 1979,54" stroke="black"/>
+        <text x="1979" y="54">Surtees</text>
     </g>
     <g class="team">
-        <path d="M 1952,57 L 1960,57" stroke="black"/>
-        <text x="1960" y="57">Connaught</text>
+        <path d="M 1972,57 L 1974,57" stroke="black"/>
+        <text x="1974" y="57">Tecno</text>
     </g>
     <g class="team">
-        <path d="M 1952,60 L 1953,60" stroke="black"/>
-        <text x="1953" y="60">Frazer-Nash</text>
+        <path d="M 1973,60 L 1983,60" stroke="black"/>
+        <text x="1983" y="60">Ensign</text>
     </g>
     <g class="team">
-        <path d="M 1952,63 L 1954,63" stroke="black"/>
-        <text x="1954" y="63">Heck</text>
+        <path d="M 1973,63 L 1979,63" stroke="black"/>
+        <text x="1979" y="63">Hesketh</text>
     </g>
     <g class="team">
-        <path d="M 1952,66 L 1953,66" stroke="black"/>
-        <text x="1953" y="66">Krakau</text>
+        <path d="M 1973,66 L 1976,66" stroke="black"/>
+        <text x="1976" y="66">Hill</text>
     </g>
     <g class="team">
-        <path d="M 1952,69 L 1954,69" stroke="black"/>
-        <text x="1954" y="69">Nacke</text>
+        <path d="M 1973,69 L 1981,69" stroke="black"/>
+        <text x="1981" y="69">Shadow</text>
     </g>
     <g class="team">
-        <path d="M 1952,72 L 1954,72" stroke="black"/>
-        <text x="1954" y="72">Reif</text>
+        <path d="M 1974,72 L 1977,72" stroke="black"/>
+        <text x="1977" y="72">Parnelli</text>
     </g>
     <g class="team">
-        <path d="M 1953,75 L 1954,75" stroke="black"/>
-        <text x="1954" y="75">EMW</text>
+        <path d="M 1974,75 L 1978,75" stroke="black"/>
+        <text x="1978" y="75">Penske</text>
     </g>
     <g class="team">
-        <path d="M 1953,78 L 1954,78" stroke="black"/>
-        <text x="1954" y="78">Greifzu</text>
+        <path d="M 1975,78 L 1983,78" stroke="black"/>
+        <text x="1983" y="78">Fittipaldi</text>
     </g>
     <g class="team">
-        <path d="M 1954,81 L 1955,81" stroke="black"/>
-        <text x="1955" y="81">Klenk</text>
+        <path d="M 1976,81 L 1997,81" stroke="black"/>
+        <text x="1997" y="81">Ligier</text>
+        <path d="M 1997,81 L 2002,81" stroke="black"/>
+        <text x="2002" y="81">Prost</text>
     </g>
     <g class="team">
-        <path d="M 1954,84 L 1958,84" stroke="black"/>
-        <text x="1958" y="84">Lancia</text>
+        <path d="M 1977,84 L 1980,84" stroke="black"/>
+        <text x="1980" y="84">Wolf</text>
     </g>
     <g class="team">
-        <path d="M 1954,87 L 1956,87" stroke="silver"/>
-        <text x="1956" y="87">Mercedes</text>
+        <path d="M 1977,84 L 1986,84" stroke="yellow"/>
+        <text x="1986" y="84">Renault</text>
     </g>
     <g class="team">
-        <path d="M 1954,90 L 1961,90" stroke="black"/>
-        <text x="1961" y="90">Vanwall</text>
-    </g>
-    <g class="team">
-        <path d="M 1955,93 L 1956,93" stroke="black"/>
-        <text x="1956" y="93">Arzani-Volpini</text>
-    </g>
-    <g class="team">
-        <path d="M 1956,96 L 1957,96" stroke="black"/>
-        <text x="1957" y="96">Bugatti</text>
-    </g>
-    <g class="team">
-        <path d="M 1956,99 L 1957,99" stroke="black"/>
-        <path d="M 1961,99 L 1963,99" stroke="black"/>
-        <text x="1963" y="99">Emeryson</text>
-    </g>
-    <g class="team">
-        <path d="M 1957,102 L 1963,102" stroke="black"/>
-        <text x="1963" y="102">Porsche</text>
-    </g>
-    <g class="team">
-        <path d="M 1958,105 L 1995,105" stroke="darkgreen"/>
-        <text x="1995" y="105">Lotus</text>
-    </g>
-    <g class="team">
-        <path d="M 1959,108 L 1961,108" stroke="darkgreen"/>
-        <text x="1961" y="108">Aston Martin</text>
-    </g>
-    <g class="team">
-        <path d="M 1959,111 L 1961,111" stroke="black"/>
-        <text x="1961" y="111">Behra-Porsche</text>
-    </g>
-    <g class="team">
-        <path d="M 1959,114 L 1960,114" stroke="black"/>
-        <text x="1960" y="114">Fry</text>
-    </g>
-    <g class="team">
-        <path d="M 1959,117 L 1962,117" stroke="black"/>
-        <text x="1962" y="117">JBW</text>
-    </g>
-    <g class="team">
-        <path d="M 1959,120 L 1960,120" stroke="black"/>
-        <text x="1960" y="120">Kurtis Kraft</text>
-    </g>
-    <g class="team">
-        <path d="M 1959,123 L 1960,123" stroke="black"/>
-        <text x="1960" y="123">Tec-Mec</text>
+        <path d="M 1978,90 L 1991,90" stroke="black"/>
+        <text x="1991" y="89.5">Arrows</text>
+        <path d="M 1991,90 L 1997,90" stroke="black"/>
+        <text x="1997" y="90.5">Footwork</text>
+        <path d="M 1997,90 L 2003,90" stroke="black"/>
+        <text x="2003" y="90">Arrows</text>
     </g>
     <!-- 
-    <g class="team">
-        <path d="M 1966,9 L 2024,9" stroke="orange"/>
-        <text x="2024" y="9">McLaren</text>
-    </g>
-    <g class="team">
-        <path d="M 1977,12 L 2024,12" stroke="navy"/>
-        <text x="2024" y="12">Williams</text>
-    </g>
     <g class="team">
         <path d="M 1993,15 L 2006,15" stroke="white"/>
         <text x="2006" y="15">Sauber</text>
@@ -379,7 +355,7 @@ g.team > text.med {
         <text x="2010" y="15.5" class="small">Sauber</text>
         <path d="M 2010,15 L 2019,15" stroke="white"/>
         <text x="2019" y="15">Sauber</text>
-        <path d="M 2019,15 L 2024,15" stroke="darkred"/>
-        <text x="2024" y="15" class="small">Alfa Romeo</text>
+        <path d="M 2019,15 L 2025,15" stroke="darkred"/>
+        <text x="2025" y="15" class="small">Alfa Romeo</text>
     </g> -->
 </svg>
