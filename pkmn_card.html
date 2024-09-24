@@ -1,0 +1,652 @@
+<html>
+    <head>
+        <title>Pokemon Cards</title>
+        <style>
+            body {
+                display: grid;
+                grid-template-columns: 20rem 1fr;
+            }
+
+            fieldset {
+                height: min-content;
+
+                &#set {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+                    gap: 0.125rem;
+
+                    & label {
+                        display: grid;
+                        grid-template-columns: min-content 40px 1fr;
+                        gap: 0.125rem;
+                        align-items: center;
+                    }
+                }
+            }
+
+            section#sidebar {
+                display: grid;
+                justify-items: center;
+                grid-template-rows: max-content, max-content, max-content, 1fr;
+
+            }
+        </style>
+        <script type="module">
+            const preview = document.querySelector('#preview'), output = document.querySelector('output'),
+                setInputs = document.querySelectorAll('[name=set]'), numberInput = document.querySelector('[name=number]'),
+                a = document.querySelector('a');
+            function update() {
+                let set;
+                setInputs.forEach(input => {
+                    if (input.checked) {
+                        set = input;
+                    }
+                });
+                preview.src = `https://www.pokemon.com/static-assets/content-assets/cms2/img/cards/web/${set.value.toUpperCase()}/${set.value.toUpperCase()}_EN_${numberInput.value}.png`;
+                a.href = `https://www.pokemon.com/uk/pokemon-tcg/pokemon-cards/series/${set.value}/${numberInput.value}/`;
+            }
+            setInputs.forEach(input => input.addEventListener('input', update));
+            numberInput.addEventListener('input', update);
+        </script>
+    </head>
+    <body>
+        <section id="sidebar">
+            <fieldset>
+                <label>Number
+                    <input type="text" name="number" />
+                </label>
+            </fieldset>
+            <img id="preview" />
+            <a target="_blank">Open Card Details</a>
+            <div></div>
+        </section>
+        <fieldset id="set">
+            <legend>Set</legend>
+            <label>
+                <input type="radio" name="set" value="sv07" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sv07-expansion-symbol.png" />
+                <span>Stellar Crown</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sv6pt5" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sv6pt5-expansion-symbol.png" />
+                <span>Shrouded Fable</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sv06" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sv06-expansion-symbol.png" />
+                <span>Twilight Masquerade</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sv05" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sv05-expansion-symbol.png" />
+                <span>Temporal Forces</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sv4pt5" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sv4pt5-expansion-symbol.png" />
+                <span>Paldean Fates</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sv04" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sv04-expansion-symbol.png" />
+                <span>Paradox Rift</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sv3pt5" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sv3pt5-expansion-symbol.png" />
+                <span>151</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sv03" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sv03-expansion-symbol.png" />
+                <span>Obsidian Flames</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sv02" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sv02-expansion-symbol.png" />
+                <span>Paldea Evolved</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sv01" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sv01-expansion-symbol.png" />
+                <span>Scarlet &amp; Violet</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="svp" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/svp-expansion-symbol.png" />
+                <span>Scarlet &amp; Violet Promo</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh12pt5gg" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh12pt5gg-expansion-symbol.png" />
+                <span>Crown Zenith Galarian Gallery</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh12pt5" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh12pt5-expansion-symbol.png" />
+                <span>Crown Zenith</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh12tg" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh12-expansion-symbol.png" />
+                <span>Silver Tempest: Trainer Gallery</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh12" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh12-expansion-symbol.png" />
+                <span>Silver Tempest</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh11tg" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh11-expansion-symbol.png" />
+                <span>Lost Origin Trainer Gallery</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh11" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh11-expansion-symbol.png" />
+                <span>Lost Origin</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="pgo" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/pgo-expansion-symbol.png" />
+                <span>Pokémon TCG: Pokémon GO</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh10tg" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh10-expansion-symbol.png" />
+                <span>Astral Radiance Trainer Gallery</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh10" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh10-expansion-symbol.png" />
+                <span>Astral Radiance</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh9tg" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh9-expansion-symbol.png" />
+                <span>Brilliant Stars Trainer Gallery</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh9" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh9-expansion-symbol.png" />
+                <span>Brilliant Stars</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh8" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh8-expansion-symbol.png" />
+                <span>Fusion Strike</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="cel25c" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/25th-expansion-symbol.png" />
+                <span>Celebrations: Classic Collection</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="cel25" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/25th-expansion-symbol.png" />
+                <span>Celebrations</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh7" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh7-expansion-symbol.png" />
+                <span>Evolving Skies</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh6" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh6-expansion-symbol.png" />
+                <span>Chilling Reign</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh5" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh5-expansion-symbol.png" />
+                <span>Battle Styles</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh45sv" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh45sv-expansion-symbol.png" />
+                <span>Shining Fates: Shiny Vault</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh45" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh45-expansion-symbol.png" />
+                <span>Shining Fates</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh4" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh4-expansion-symbol.png" />
+                <span>Vivid Voltage</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh35" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh35-expansion-symbol.png" />
+                <span>Champion's Path</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh3" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh3-expansion-symbol.png" />
+                <span>Darkness Ablaze</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh2" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh2-expansion-symbol.png" />
+                <span>Rebel Clash</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swsh1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swsh1-expansion-symbol.png" />
+                <span>Sword &amp; Shield</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="swshp" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/swshp-expansion-symbol.png" />
+                <span>Sword &amp; Shield Promo</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm12" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm12-expansion-symbol.png" />
+                <span>Cosmic Eclipse</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm115" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm115-expansion-symbol.png" />
+                <span>Hidden Fates</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm11" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm11-expansion-symbol.png" />
+                <span>Unified Minds</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm10" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm10-expansion-symbol.png" />
+                <span>Unbroken Bonds</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="det" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/det-expansion-symbol.png" />
+                <span>Detective Pikachu</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm9" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm9-expansion-symbol.png" />
+                <span>Team Up</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm8" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm8-expansion-symbol.png" />
+                <span>Lost Thunder</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm75" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm75-expansion-symbol.png" />
+                <span>Dragon Majesty</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm7" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm7-expansion-symbol.png" />
+                <span>Celestial Storm</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm6" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm6-expansion-symbol.png" />
+                <span>Forbidden Light</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm5" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm5-expansion-symbol.png" />
+                <span>Ultra Prism</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm4" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm4-expansion-symbol.png" />
+                <span>Crimson Invasion</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm35" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm35-expansion-symbol.png" />
+                <span>Shining Legends</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm3" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm3-expansion-symbol.png" />
+                <span>Burning Shadows</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm2" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm2-expansion-symbol.png" />
+                <span>Guardians Rising</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sm1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sm1-expansion-symbol.png" />
+                <span>Sun &amp; Moon</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="sma" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sma-expansion-symbol.png" />
+                <span>Yellow A Alternate</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="smp" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/smp-expansion-symbol.png" />
+                <span>Sun &amp; Moon Promo</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy12" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy12-expansion-symbol.png" />
+                <span>XY—Evolutions</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy11" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy11-expansion-symbol.png" />
+                <span>XY—Steam Siege</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy10" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy10-expansion-symbol.png" />
+                <span>XY—Fates Collide</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="g1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/g1-expansion-symbol.png" />
+                <span>Generations</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy9" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy9-expansion-symbol.png" />
+                <span>XY—BREAKpoint</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy8" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy8-expansion-symbol.png" />
+                <span>XY–BREAKthrough</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy7" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy7-expansion-symbol.png" />
+                <span>XY—Ancient Origins</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy6" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy6-expansion-symbol.png" />
+                <span>XY—Roaring Skies</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="dc1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/dc1-expansion-symbol.png" />
+                <span>Double Crisis</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy5" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy5-expansion-symbol.png" />
+                <span>XY—Primal Clash</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy4" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy4-expansion-symbol.png" />
+                <span>XY—Phantom Forces</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy3" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy3-expansion-symbol.png" />
+                <span>XY—Furious Fists</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy2" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy2-expansion-symbol.png" />
+                <span>Flashfire</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy1-expansion-symbol.png" />
+                <span>XY</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xy0" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xy0-expansion-symbol.png" />
+                <span>Kalos Starter Set</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xya" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xya-expansion-symbol.png" />
+                <span>Yellow A Alternate</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="xyp" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/black-star-promo.png" />
+                <span>XY—Promo</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bw11" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/bw11-expansion-symbol.png" />
+                <span>BW-Legendary Treasures</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bw10" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/bw10-expansion-symbol.png" />
+                <span>BW-Plasma Blast</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bw9" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/bw9-expansion-symbol.png" />
+                <span>BW-Plasma Freeze</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bw8" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/bw8-expansion-symbol.png" />
+                <span>BW-Plasma Storm</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bw7" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/bw7-expansion-symbol.png" />
+                <span>BW—Boundaries Crossed</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="dv1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/dv1-expansion-symbol.png" />
+                <span>Dragon Vault</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bw6" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/bw6-expansion-symbol.png" />
+                <span>BW-Dragons Exalted</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bw5" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/bw5-expansion-symbol.png" />
+                <span>BW-Dark Explorers</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bw4" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/bw4-expansion-symbol.png" />
+                <span>BW-Next Destinies</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bw3" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/bw3-expansion-symbol.png" />
+                <span>BW—Noble Victories</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bw2" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/bw2-expansion-symbol.png" />
+                <span>BW—Emerging Powers</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bw1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/bw1-expansion-symbol.png" />
+                <span>Black &amp; White</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="bwp" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/black-star-promo.png" />
+                <span>BW—Promo</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="col1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/col1-expansion-symbol.png" />
+                <span>Call of Legends</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="hgss4" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/hgss4-expansion-symbol.png" />
+                <span>Triumphant</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="hgss3" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/hgss3-expansion-symbol.png" />
+                <span>Undaunted</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="hgss2" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/hgss2-expansion-symbol.png" />
+                <span>Unleashed</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="hgss1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/hgss1-expansion-symbol.png" />
+                <span>HeartGold SoulSilver</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="hsp" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/black-star-promo.png" />
+                <span>HS—Promo</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="pl4" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/pl4-expansion-symbol.png" />
+                <span>Arceus</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="pl3" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/pl3-exp-symbol.png" />
+                <span>Supreme Victors</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="pl2" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/pl2-expansion-symbol.png" />
+                <span>Rising Rivals</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="pl1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/pl1-expansion-symbol.png" />
+                <span>Platinum</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="dp7" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/dp7-exp-symbol.png" />
+                <span>Stormfront</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="dp6" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/dp6-exp-symbol.png" />
+                <span>Legends Awakened</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="dp5" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/dp5-exp-symbol.png" />
+                <span>Majestic Dawn</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="dp4" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/dp4-expansion-symbol.png" />
+                <span>Great Encounters</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="dp3" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/dp3-expansion-symbol.png" />
+                <span>Secret Wonders</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="dp2" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/dp2-exp-symbol.png" />
+                <span>Mysterious Treasures</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="dp1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/dp1-exp-symbol.png" />
+                <span>Diamond &amp; Pearl</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex16" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-16symbol.png" />
+                <span>Power Keepers</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex15" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-15symbol.png" />
+                <span>Dragon Frontiers</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex14" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-14symbol.png" />
+                <span>Crystal Guardians</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex13" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-13symbol.png" />
+                <span>Holon Phantoms</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex12" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-12symbol.png" />
+                <span>Legend Maker</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex11" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-11symbol.png" />
+                <span>Delta Species</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex10" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-10symbol.png" />
+                <span>Unseen Forces</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex9" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-09symbol.png" />
+                <span>Emerald</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex8" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-08symbol.png" />
+                <span>Deoxys</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex7" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-07symbol.png" />
+                <span>Team Rocket Returns</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex6" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-06symbol.png" />
+                <span>Fire Red &amp; Leaf Green</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex5" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-05symbol.png" />
+                <span>Hidden Legends</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex4" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-04symbol.png" />
+                <span>Team Magma vs. Team Aqua</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex2" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-02symbol.png" />
+                <span>Sandstorm</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex3" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-03symbol.png" />
+                <span>Dragon</span>
+            </label>
+            <label>
+                <input type="radio" name="set" value="ex1" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-01symbol.png" />
+                <span>Ruby &amp; Sapphire</span>
+            </label>
+        </fieldset>
+    </body>
+</html>
