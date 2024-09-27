@@ -27,7 +27,13 @@
             section#sidebar {
                 display: grid;
                 justify-items: center;
-                grid-template-rows: max-content, max-content, max-content, 1fr;
+                grid-template-rows: max-content min-content max-content 1fr;
+
+                & #preview {
+                    min-width: 100%;
+                    min-height: 350px;
+                    border: none;
+                }
 
             }
         </style>
@@ -42,8 +48,21 @@
                         set = input;
                     }
                 });
-                preview.src = `https://www.pokemon.com/static-assets/content-assets/cms2/img/cards/web/${set.value.toUpperCase()}/${set.value.toUpperCase()}_EN_${numberInput.value}.png`;
-                a.href = `https://www.pokemon.com/uk/pokemon-tcg/pokemon-cards/series/${set.value}/${numberInput.value}/`;
+                if (!(set && numberInput.value)) { return; }
+                const x = numberInput.value,
+                    set_code = set.value == 'swsh45sv' ? 'swsh45' : set.value,
+                    card_number = (
+                        set.value == 'swsh45sv' ? (
+                            x.slice(0, 2) == 'SV' ? x : `SV${`000${x}`.slice(-3)}`
+                        ) : (
+                            set.value == 'cel25c' ? (
+                                x.slice(-2) == '_A' ? x : `${x}_A`
+                            ) : numberInput.value
+                        )
+                    );
+
+                preview.src = `https://www.pokemon.com/static-assets/content-assets/cms2/img/cards/web/${set_code.toUpperCase()}/${set_code.toUpperCase()}_EN_${card_number}.png`;
+                a.href = `https://www.pokemon.com/uk/pokemon-tcg/pokemon-cards/series/${set.value}/${card_number}/`;
             }
             setInputs.forEach(input => input.addEventListener('input', update));
             numberInput.addEventListener('input', update);
@@ -56,7 +75,8 @@
                     <input type="text" name="number" />
                 </label>
             </fieldset>
-            <img id="preview" />
+            <!-- <img id="preview" /> -->
+            <iframe id="preview"></iframe>
             <a target="_blank">Open Card Details</a>
             <div></div>
         </section>
