@@ -1,40 +1,191 @@
+<!DOCTYPE html>
 <html>
     <head>
         <title>Pokemon Cards</title>
         <style>
+            @layer defaults {
+
+                /* Global */
+                *,
+                *:before,
+                *:after {
+                    /* Reset box and size */
+                    box-sizing: border-box;
+                    min-width: 0;
+                    min-height: 0;
+                    margin: 0;
+                    padding: 0;
+                    gap: 0;
+                    border: none;
+                    outline: none;
+                    /* Reset fonts */
+                    line-height: calc(1em + 0.5rem);
+                    text-align: inherit;
+                    font-family: inherit;
+                }
+
+                :root {
+                    text-align: center;
+                    font-family: "Monaspace Neon", Sans-serif;
+
+                    /* Dark theme styles */
+                    @media (prefers-color-scheme: dark) {
+                        color-scheme: dark;
+                    }
+
+                    /* Light theme styles */
+                    @media (prefers-color-scheme: light) {
+                        color-scheme: light;
+                    }
+                }
+
+                /* Media */
+                img,
+                picture,
+                video,
+                svg {
+                    /* Default shape and size */
+                    max-width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                    /* Show whole image */
+                    object-fit: contain;
+                    /* If img doesn't load, style alt text */
+                    font-style: italic;
+                }
+
+                /* Inputs */
+                input,
+                button,
+                textarea,
+                select {
+                    font: inherit;
+                    background: buttonface;
+                    border: 0.0625rem solid buttonborder;
+                    border-radius: 0.25rem;
+
+                    &[type=radio] {
+                        width: 0.75em;
+                        height: 0.75em;
+                        border-radius: 1em;
+                    }
+
+                    &:focus-visible {
+                        box-shadow: inset 0 0 0.0625rem 0.0625rem currentColor;
+                    }
+                }
+
+                a,
+                button,
+                input[type=file],
+                input[type=submit],
+                select,
+                ::file-selector-button,
+                summary {
+                    cursor: pointer;
+                }
+
+                /* Tables */
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                    vertical-align: middle;
+                }
+
+                /* Text */
+
+                abbr {
+                    cursor: help;
+                    text-decoration: underline dotted currentColor;
+                    text-underline-offset: 0.25rem;
+                }
+
+                a,
+                abbr {
+                    vertical-align: baseline;
+                }
+            }
+
+            :root {
+                --set-icon-size: 40px;
+            }
+
             body {
+                height: 100vh;
+                width: 100vw;
+                overflow: hidden;
                 display: grid;
-                grid-template-columns: 20rem 1fr;
+                grid-template-columns: max-content 1fr;
+                padding: 0.25rem;
+                gap: 0.125rem;
             }
 
             fieldset {
-                height: min-content;
+
+                border: 0.125rem solid currentColor;
+                border-radius: 0.25rem;
+                padding: 0.25rem;
+
+                & legend {
+                    text-align: start;
+                    margin-inline-start: 1rem;
+                    padding: 0.25rem;
+
+                }
 
                 &#set {
+                    height: 100%;
+                    overflow-y: auto;
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+                    grid-template-rows: repeat(auto-fit, calc(var(--set-icon-size)));
                     gap: 0.125rem;
 
                     & label {
+                        min-height: var(--set-icon-size);
                         display: grid;
-                        grid-template-columns: min-content 40px 1fr;
+                        grid-template-columns: var(--set-icon-size) 1fr;
                         gap: 0.125rem;
                         align-items: center;
+                        text-align: start;
+
+                        &>input {
+                            display: none;
+                        }
+
+                        &:has(> input[disabled]) {
+                            filter: invert(50%) grayscale(100%)
+                        }
+
+                        &:has(> input:checked) {
+                            box-shadow: inset 0 0 0.0625rem 0.0625rem currentColor;
+                            border-radius: 0.25rem;
+
+                            &>img {
+                                padding: 0.125rem;
+
+                                &:not([data-icon-colour]) {
+                                    filter: invert(100%);
+                                }
+
+                            }
+                        }
                     }
                 }
             }
 
             section#sidebar {
                 display: grid;
+                gap: 0.25rem;
                 justify-items: center;
-                grid-template-rows: max-content min-content max-content 1fr;
+                grid-template-rows: max-content max-content min-content max-content 1fr;
 
                 & #preview {
-                    min-width: 100%;
-                    min-height: 350px;
-                    border: none;
+                    width: 247px;
+                    height: 345px;
+                    background: white;
+                    border-radius: 12px;
                 }
-
             }
         </style>
         <script type="module">
@@ -50,17 +201,26 @@
                 });
                 if (!(set && numberInput.value)) { return; }
                 const x = numberInput.value,
-                    set_code = set.value == 'swsh45sv' ? 'swsh45' : set.value,
-                    card_number = (
-                        set.value == 'swsh45sv' ? (
-                            x.slice(0, 2) == 'SV' ? x : `SV${`000${x}`.slice(-3)}`
-                        ) : (
-                            set.value == 'cel25c' ? (
-                                x.slice(-2) == '_A' ? x : `${x}_A`
-                            ) : numberInput.value
-                        )
-                    );
-
+                    set_code =
+                        (set.value == 'swsh10tg' && 'swsh10')
+                        || (set.value == 'swsh9tg' && 'swsh9')
+                        || (set.value == 'cel25' && 'cel')
+                        || (set.value == 'swsh45sv' && 'swsh45')
+                        || set.value,
+                    card_number =
+                        (set.value == 'cel25c' && (x.slice(-2) != '_A' && `${x}_A`))
+                        || (set.value.slice(-2) == 'gg' && ((x.slice(0, 2) == 'GG' && x) || `GG${`00${x}`.slice(-2)}`))
+                        || (set.value.slice(-2) == 'tg' && ((x.slice(0, 2) == 'TG' && x) || `TG${`00${x}`.slice(-2)}`))
+                        || (set.value == 'swsh45sv' && ((x.slice(0, 2) == 'SV' && x) || `SV${`000${x}`.slice(-3)}`))
+                        || (set.value == 'swshp' && ((x.slice(0, 4) == 'SWSH' && x) || `SWSH${`000${x}`.slice(-3)}`))
+                        || (set.value == 'sma' && ((x.slice(0, 2) == 'SV' && x) || `SV${x}`))
+                        || (set.value == 'smp' && ((x.slice(0, 2) == 'SM' && x) || `SM${`00${x}`.slice(-2)}`))
+                        || (set.value == 'xya' && (x.slice(-1) != 'a' && `${x}a`))
+                        || (set.value == 'xyp' && ((x.slice(0, 2) == 'XY' && x) || `XY${`00${x}`.slice(-2)}`))
+                        || (set.value == 'bwp' && ((x.slice(0, 2) == 'BW' && x) || `BW${`00${x}`.slice(-2)}`))
+                        || (set.value == 'hsp' && ((x.slice(0, 2) == 'HS' && x) || `HS${`00${x}`.slice(-2)}`))
+                        || x;
+                output.innerText = `${set_code} - ${card_number}`;
                 preview.src = `https://www.pokemon.com/static-assets/content-assets/cms2/img/cards/web/${set_code.toUpperCase()}/${set_code.toUpperCase()}_EN_${card_number}.png`;
                 a.href = `https://www.pokemon.com/uk/pokemon-tcg/pokemon-cards/series/${set.value}/${card_number}/`;
             }
@@ -70,11 +230,13 @@
     </head>
     <body>
         <section id="sidebar">
-            <fieldset>
-                <label>Number
+            <label>
+                <fieldset>
+                    <legend>Number</legend>
                     <input type="text" name="number" />
-                </label>
-            </fieldset>
+                </fieldset>
+            </label>
+            <output></output>
             <!-- <img id="preview" /> -->
             <iframe id="preview"></iframe>
             <a target="_blank">Open Card Details</a>
@@ -344,7 +506,7 @@
             </label>
             <label>
                 <input type="radio" name="set" value="sma" />
-                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sma-expansion-symbol.png" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/sma-expansion-symbol.png" data-icon-colour />
                 <span>Yellow A Alternate</span>
             </label>
             <label>
@@ -394,7 +556,7 @@
             </label>
             <label>
                 <input type="radio" name="set" value="dc1" />
-                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/dc1-expansion-symbol.png" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/dc1-expansion-symbol.png" data-icon-colour />
                 <span>Double Crisis</span>
             </label>
             <label>
@@ -429,7 +591,7 @@
             </label>
             <label>
                 <input type="radio" name="set" value="xya" />
-                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xya-expansion-symbol.png" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/xya-expansion-symbol.png" data-icon-colour />
                 <span>Yellow A Alternate</span>
             </label>
             <label>
@@ -524,11 +686,11 @@
             </label>
             <label>
                 <input type="radio" name="set" value="hgss1" />
-                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/hgss1-expansion-symbol.png" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/hgss1-expansion-symbol.png" data-icon-colour />
                 <span>HeartGold SoulSilver</span>
             </label>
             <label>
-                <input type="radio" name="set" value="hsp" />
+                <input type="radio" name="set" value="hsp" disabled />
                 <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/black-star-promo.png" />
                 <span>HS—Promo</span>
             </label>
@@ -649,7 +811,7 @@
             </label>
             <label>
                 <input type="radio" name="set" value="ex4" />
-                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-04symbol.png" />
+                <img src="https://www.pokemon.com/static-assets/content-assets/cms/img/tcg/expansion-symbols/_40x40/ex-04symbol.png" data-icon-colour />
                 <span>Team Magma vs. Team Aqua</span>
             </label>
             <label>
