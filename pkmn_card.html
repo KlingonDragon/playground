@@ -199,7 +199,12 @@
                         set = input;
                     }
                 });
-                if (!(set && numberInput.value)) { return; }
+                if (!(set && numberInput.value)) {
+                    output.innerText = '';
+                    preview.src = '';
+                    a.href = '';
+                    return;
+                }
                 const x = numberInput.value,
                     set_code =
                         (set.value == 'swsh10tg' && 'swsh10')
