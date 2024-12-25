@@ -1,0 +1,39 @@
+{
+    "printed": [
+        {
+            "id": 9241,
+            "file_name": "./voucher_3.svg",
+            "morse": "----. ..--- ....- .----",
+            "value": "£10",
+            "goods": "Alcohol",
+            "notes": null
+        }
+    ],
+    "issued": [],
+    "redeemed": [
+        {
+            "id": 9227,
+            "file_name": "./voucher_1.svg",
+            "morse": "----. ..--- ..--- --...",
+            "value": "£10",
+            "goods": "Alcohol",
+            "issued_to": "Father",
+            "issued_on": "2023-12-25",
+            "redeemed_by": "Father",
+            "redeemed_on": "2024-12-25",
+            "notes": null
+        },
+        {
+            "id": 9239,
+            "file_name": "./voucher_2.svg",
+            "morse": "----. ..--- ...-- ----.",
+            "value": "£10",
+            "goods": "Alcohol",
+            "issued_to": "Sister",
+            "issued_on": "2023-12-25",
+            "redeemed_by": "Sister",
+            "redeemed_on": "2024-12-25",
+            "notes": "Redeemed virtually"
+        }
+    ]
+}
