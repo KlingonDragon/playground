@@ -1,0 +1,28 @@
+.dark {
+    color-scheme: dark;
+}
+
+.light {
+    color-scheme: light;
+}
+
+:is(.light, .dark):not(input, textarea, button) {
+    background: canvas;
+    color: canvastext;
+}
+
+body {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: max-content 1fr;
+    height: 100dvh;
+}
+
+.initial-test-class::after {
+    content: ' (initial)';
+}
+
+.updated-test-class::after {
+    content: ' (updated)';
+}
