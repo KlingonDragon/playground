@@ -134,6 +134,7 @@
             M 2025,1 v 592 Z
             M 2026,1 v 592 Z
             M 2027,1 v 592 Z
+            M 2028,1 v 592 Z
         " />
         <text x="1950.5" y="-0.5">1950</text>
         <text x="1951.5" y="-0.5">1951</text>
@@ -212,6 +213,7 @@
         <text x="2024.5" y="-0.5">2024</text>
         <text x="2025.5" y="-0.5">2025</text>
         <text x="2026.5" y="-0.5">2026</text>
+        <text x="2027.5" y="-0.5">2027</text>
     </g>
     <!-- A note on years. start on start year end on end year +1-->
     <g class="team">
@@ -228,8 +230,8 @@
         <text x="1970" y="6">Cooper</text>
     </g>
     <g class="team">
-        <path d="M 1950,9 L 2025,9" stroke="#D40000" />
-        <text x="2025" y="9">Ferrari</text>
+        <path d="M 1950,9 L 2026,9" stroke="#D40000" />
+        <text x="2026" y="9">Ferrari</text>
     </g>
     <g class="team">
         <path d="M 1950,12 L 1959,12" stroke="black" />
@@ -274,8 +276,8 @@
         <text x="1969" y="36">Eagle</text>
     </g>
     <g class="team">
-        <path d="M 1966,39 L 2025,39" stroke="orange" />
-        <text x="2025" y="39">McLaren</text>
+        <path d="M 1966,39 L 2026,39" stroke="orange" />
+        <text x="2026" y="39">McLaren</text>
     </g>
     <g class="team">
         <path d="M 1966,42 L 1999,42" stroke="black" />
@@ -286,8 +288,8 @@
         <text x="2009" y="41.5" class="small">Honda</text>
         <path d="M 2009,42 L 2010,42" stroke="white" />
         <text x="2010" y="42.7" class="small">Brawn</text>
-        <path d="M 2010,42 L 2025,42" stroke="silver" />
-        <text x="2025" y="42">Mercedes</text>
+        <path d="M 2010,42 L 2026,42" stroke="silver" />
+        <text x="2026" y="42">Mercedes</text>
     </g>
     <g class="team">
         <path d="M 1967,45 L 1973,45" stroke="black" />
@@ -296,8 +298,8 @@
     <g class="team">
         <path d="M 1969,48 L 1977,48" stroke="black" />
         <text x="1977" y="48">Frank Williams Racing Cars</text>
-        <path d="M 1977,48 L 2025,48" stroke="navy" />
-        <text x="2025" y="48">Williams</text>
+        <path d="M 1977,48 L 2026,48" stroke="navy" />
+        <text x="2026" y="48">Williams</text>
     </g>
     <g class="team">
         <path d="M 1970,51 L 1978,51" stroke="black" />
@@ -397,8 +399,8 @@
         <text x="2016" y="102" class="med">Lotus</text>
         <path d="M 2016,102 L 2021,102" stroke="yellow" />
         <text x="2021" y="102" class="small">Renault</text>
-        <path d="M 2021,102 L 2025,102" stroke="#318CE7" />
-        <text x="2025" y="102" class="small">Alpine</text>
+        <path d="M 2021,102 L 2026,102" stroke="#318CE7" />
+        <text x="2026" y="102" class="small">Alpine</text>
     </g>
     <g class="team">
         <path d="M 1983,105 L 1986,105" stroke="black" />
@@ -415,8 +417,8 @@
         <text x="2020" y="110.5" class="med">Toro Rosso</text>
         <path d="M 2020,111 L 2024,111" stroke="steelblue" />
         <text x="2024" y="111.7" class="med">AlphaTauri</text>
-        <path d="M 2024,111 L 2025,111" stroke="darkblue" />
-        <text x="2025" y="110.5" class="med">RB</text>
+        <path d="M 2024,111 L 2026,111" stroke="darkblue" />
+        <text x="2026" y="110.5" class="med">RB</text>
     </g>
     <g class="team">
         <path d="M 1985,114 L 1990,114" stroke="black" />
@@ -470,8 +472,8 @@
         <text x="2019" y="138" class="small">Racing Point Force India</text>
         <path d="M 2019,138 L 2021,138" stroke="pink" />
         <text x="2021" y="138.9" class="small">Racing Point</text>
-        <path d="M 2021,138 L 2025,138" stroke="#004225" />
-        <text x="2025" y="138" class="small">Aston Martin</text>
+        <path d="M 2021,138 L 2026,138" stroke="#004225" />
+        <text x="2026" y="138" class="small">Aston Martin</text>
     </g>
     <g class="team">
         <path d="M 1993,141 L 2006,141" stroke="white"/>
@@ -482,8 +484,8 @@
         <text x="2019" y="140.5" class="med">Sauber</text>
         <path d="M 2019,141 L 2024,141" stroke="darkred"/>
         <text x="2024" y="141.7" class="med">Alfa Romeo</text>
-        <path d="M 2024,141 L 2025,141" stroke="limegreen"/>
-        <text x="2025" y="140.5" class="med">Sauber</text>
+        <path d="M 2024,141 L 2026,141" stroke="limegreen"/>
+        <text x="2026" y="140.5" class="med">Sauber</text>
     </g>
     <g class="team">
         <path d="M 1994,144 L 1996,144" stroke="black" />
@@ -502,8 +504,8 @@
         <text x="2000" y="153">Stewart</text>
         <path d="M 2000,153 L 2005,153" stroke="darkgreen" />
         <text x="2005" y="153" class="med">Jaguar</text>
-        <path d="M 2005,153 L 2025,153" stroke="darkblue" />
-        <text x="2025" y="153">Red Bull</text>
+        <path d="M 2005,153 L 2026,153" stroke="darkblue" />
+        <text x="2026" y="153">Red Bull</text>
     </g>
     <g class="team">
         <path d="M 2002,156 L 2010,156" stroke="white" />
@@ -532,7 +534,7 @@
         <text x="2017" y="168.7" class="small">Manor</text>
     </g>
     <g class="team">
-        <path d="M 2016,171 L 2025,171" stroke="white" />
-        <text x="2025" y="171">Haas</text>
+        <path d="M 2016,171 L 2026,171" stroke="white" />
+        <text x="2026" y="171">Haas</text>
     </g>
 </svg>
