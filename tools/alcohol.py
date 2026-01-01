@@ -1,6 +1,12 @@
 #!/bin/python3
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
+from sys import argv
 from tkinter import Button, Label, StringVar, Tk
+from uuid import uuid4
+
+DATA_DIR = Path(__file__).parent / ".py-data"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def now():
@@ -8,24 +14,27 @@ def now():
 
 
 class DataFile:
-    DATA_FILE = f"{__file__}.data"
+    data_filepath: Path
     units: list[datetime]
     safe: datetime | None
     countdown: str
 
-    def __init__(self) -> None:
+    def __init__(self, file_suffix: str | None = None) -> None:
+        self.data_filepath = (
+            DATA_DIR / f"alcohol{f'_{file_suffix}' if file_suffix else ''}.py-data"
+        ).resolve()
         self.load()
         self.test()
 
     def save(self):
         self.test()
-        with open(self.DATA_FILE, "w") as data:
+        with open(self.data_filepath, "w") as data:
             data.write("\n".join(f"{dt.timestamp()}" for dt in self.units))
 
     def load(self):
         self.units = []
         try:
-            with open(self.DATA_FILE, "r") as data:
+            with open(self.data_filepath, "r") as data:
                 for line in data:
                     try:
                         self.units.append(datetime.fromtimestamp(float(line), tz=timezone.utc))
@@ -66,7 +75,7 @@ class DataFile:
 
 
 if __name__ == "__main__":
-    data = DataFile()
+    data = DataFile((argv[1] if len(argv) >= 2 else input("Name: ") or str(uuid4())).lower())
     kill_flag = False
 
     def kill():
@@ -85,6 +94,7 @@ if __name__ == "__main__":
         row=2, column=0, sticky="NSEW"
     )
     Button(root, text="Close", command=kill, font=("", 64)).grid(row=3, column=0, sticky="NSEW")
+    Label(root, text=str(data.data_filepath), font=("", 8)).grid(row=4, column=0, sticky="NSEW")
     root.protocol("WM_DELETE_WINDOW", kill)
     while not kill_flag:
         try:
